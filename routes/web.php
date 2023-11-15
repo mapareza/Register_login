@@ -16,8 +16,8 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', [LoginController::class, 'index']);
-Route::post('/', [LoginController::class, 'authenticate']);
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
